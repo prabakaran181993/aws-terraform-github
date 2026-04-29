@@ -10,5 +10,5 @@ resource "aws_vpc" "projectone" {
 
   tags = {
     Name = "MyVPC"
-  }
+  }ff
 }
