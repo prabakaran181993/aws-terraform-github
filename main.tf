@@ -1,0 +1,3 @@
+required_providers {
+   = ">= version"
+}
