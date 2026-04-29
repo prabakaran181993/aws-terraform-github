@@ -1,2 +1,2 @@
 # aws-terraform-github
-testff
+provider "aws"
