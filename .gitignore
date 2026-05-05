@@ -1,0 +1,59 @@
+# Local .terraform directories (contains providers, modules, etc.)
+**/.terraform/*
+**/.terraformrc
+**/terraform.rc
+
+# Terraform state files (sensitive, environment-specific)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform.tfstate
+*.terraform.tfstate
+.terraform.lock.hcl
+simply.txt
+
+# Terraform plan files
+*.tfplan
+*.tfplan.binary
+
+# Crash logs
+crash.log
+crash.*.log
+*.log
+
+# Local environment variable files (sensitive)
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+terraform.tfvars
+terraform.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Module-specific ignores (recursive for subdirectories)
+modules/
+**/modules/**/.terraform/
+**/modules/**/*.tfstate
+**/modules/**/*.tfvars
+
+# Development tools
+.env
+*.env
