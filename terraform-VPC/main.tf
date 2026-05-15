@@ -1,5 +1,10 @@
 module "vpc" {
  source = "./modules/vpc"
  vpc_cidr = var.vpc_cidr
- subnet_cidr = [ "10.0.1.0/24" , "10.0.2.0/24" ]
+ subnet_cidr = var.subnet_cidr
+}
+
+module "sg" { 
+    source = "./modules/sg"
+    vpc_id = module.vpc.vpc_id
 }
